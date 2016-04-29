@@ -3,15 +3,15 @@
 
 # expected to be run from a nested node_modules directory to install on the one higher
 function install {
-  if [ ! -d "../node_modules" ]; then
-    mkdir ../node_modules
+  if [ ! -d "../../node_modules" ]; then
+    mkdir ../../node_modules
   fi
-  if [ ! -d "../node_modules/.hooks" ]; then
-    mkdir ../node_modules/.hooks
+  if [ ! -d "../../node_modules/.hooks" ]; then
+    mkdir ../../node_modules/.hooks
   fi
 
-  cp preinstall ../node_modules/.hooks/preinstall
-  chmod +x ../node_modules/.hooks/preinstall
+  cp preinstall ../../node_modules/.hooks/preinstall
+  chmod +x ../../node_modules/.hooks/preinstall
 }
 
 function parse_arg {
