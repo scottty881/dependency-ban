@@ -2,11 +2,10 @@
 
 function install {
   if [ ! -d "node_modules" ]; then
-    echo "here"
     mkdir node_modules
-    if [ ! -d ".hooks" ]; then
-      mkdir node_modules/.hooks
-    fi
+  fi
+  if [ ! -d "node_modules/.hooks" ]; then
+    mkdir node_modules/.hooks
   fi
 
   cp preinstall node_modules/.hooks/preinstall
