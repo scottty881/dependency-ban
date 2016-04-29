@@ -1,0 +1,24 @@
+{
+  "name": "dependency-ban",
+  "version": "0.0.1",
+  "description": "Prevent install of packages",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "chmod +x ./go && ./go install"
+  },
+  "keywords": [
+    "package",
+    "ban",
+    "install"
+  ],
+  "author": "scottty881",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "bannedDependencies": {
+    "lodash": {
+      "reason": "Use built in methods instead"
+    }
+  }
+}
