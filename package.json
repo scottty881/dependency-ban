@@ -1,11 +1,15 @@
 {
   "name": "dependency-ban",
-  "version": "0.1.0",
-  "description": "Prevent install of packages",
+  "version": "0.1.1",
+  "description": "Blacklist installation of packages",
   "main": "index.js",
   "scripts": {
     "postinstall": "chmod +x ./go && ./go install",
     "preuninstall": "./go uninstall"
+  },
+  "repository": {
+    "url": "https://github.com/scottty881/dependency-ban",
+    "type": "git"
   },
   "keywords": [
     "package",
