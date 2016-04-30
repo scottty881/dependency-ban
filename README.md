@@ -10,7 +10,9 @@ Example to add to package.json
 ```js
 {
   "bannedDependencies" : {
-    "is-not-array": ""
+    "is-definitely-array": "great package..."
+    "is-not-array": "TODO: make these reasons print",
+    "right-pad": ""
   }
 }
 ```
