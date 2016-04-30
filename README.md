@@ -1,12 +1,12 @@
 
 # dependency-ban
 
-Prevent installation of packages
+Blacklist installation of packages
 
 [![downloads](https://img.shields.io/npm/dm/dependency-ban.svg)](hhttps://www.npmjs.com/package/dependency-ban)
 
 ## Usage
-Example to add to package.json
+Example add bannedDependencies key to package.json and those will error when attempting to install
 ```js
 {
   "bannedDependencies" : {
