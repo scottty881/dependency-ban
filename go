@@ -14,9 +14,15 @@ function install {
   chmod +x ../../node_modules/.hooks/preinstall
 }
 
+function uninstall {
+  # npm uninstall doesnt know we added the script
+  rm ../../node_modules/.hooks/preinstall
+}
+
 function parse_arg {
   case "$1" in
     install) install
+    uninstall) uninstall
   esac
 }
 
