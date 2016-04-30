@@ -1,6 +1,6 @@
 {
   "name": "dependency-ban",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Prevent install of packages",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
   "keywords": [
     "package",
     "ban",
-    "install"
+    "install",
+    "blacklist",
+    "dependencies"
   ],
   "author": "scottty881",
   "license": "ISC",
