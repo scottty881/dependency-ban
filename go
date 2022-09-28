@@ -22,7 +22,9 @@ function uninstall {
 function parse_arg {
   case "$1" in
     install) install
+    ;;
     uninstall) uninstall
+    ;;
   esac
 }
 
